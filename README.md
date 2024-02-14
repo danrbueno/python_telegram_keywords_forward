@@ -52,7 +52,5 @@ See the steps below for the correct execution of this project:
    
 	8.1. Open terminal and the commands below
    
-		8.1.1. Build image:
-   docker build -t <image_name> .
-		8.1.2. Create and run container:
-   docker compose up
+		8.1.1. Build image: docker build -t <image_name> .
+		8.1.2. Create and run container: docker compose up
