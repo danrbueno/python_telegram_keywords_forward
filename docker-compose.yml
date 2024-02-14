@@ -3,14 +3,14 @@ version: '3.5'
 services:
   telegram-watcher:
     #build: .
-    image: telegram-watcher
-    container_name: telegram-watcher
+    image: <IMAGE_NAME>
+    container_name: <CONTAINER_NAME>
     read_only: true
     environment:
       # See the Telegram API settings: https://my.telegram.org/apps
-      TELEGRAM_API_ID: 25177426
-      TELEGRAM_API_HASH: "724b1c90e49ba8604072931788f0e61e"
-      TELEGRAM_API_STRING: "1AZWarzMBu2-Eg2gHSAn_shp5_VcYbsV-2IFoUwtMmCzOcg_7CIcoBdVAlMh2YY0uKwwDFebUvw5TsqPYaZrKxYj1oFayC3vZEMt3cPnH4Yxb30BynMK-1fi022UKDeOZQ2Ydcw3bRn7vh489gRLhrezgOwvflo20DHTD0OMWVwLRBEhkP3Lq174roImg8GDzO1ok3aHKf6W12ZUsf7Znky8YFYZqBtgJz76zTj3_GbH8OieY4qI8nxBXtYk-6AHwqo3aP_nlWqDMExKUeAGmkDfnomaVDF6X66LBDMjyxOni1cI5tiv_L1p7fu9XEWfDBFC3melIEZGqWlSPuaug2rR4HZPsYs0="
-      TELEGRAM_RECIPIENT_ID: -1002048782077
-      TELEGRAM_BOT_API_HASH: "6761390856:AAH8XkS8aaodXqY0cNWqoCjfjy_KCLbrgak"
+      TELEGRAM_API_ID: <API_ID>
+      TELEGRAM_API_HASH: <API_HASH>
+      TELEGRAM_API_STRING: <API_STRING_SESSION>
+      TELEGRAM_RECIPIENT_ID: -100<GROUP_CHANNEL_ID>
+      TELEGRAM_BOT_API_HASH: <BOT_API_HASH>
     
