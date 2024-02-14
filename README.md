@@ -1,6 +1,5 @@
 # python_telegram_keywords_forward
 Automatically forward messages in Telegram using Python and Telegram bots, using specific keywords.
-
 Technologies: Python, Telegram and Docker.
 
 This python project watches new messages in Telegram groups that a user is included, and then forward the messages to a specific group based on a list of keywords.
@@ -34,14 +33,17 @@ See the steps below for the correct execution of this project:
 	5.6. Set up the environment variable 'TELEGRAM_API_HASH' with the App api_hash, provided by Telegram
 6. If it's the first time you're running this project, you have to save the session string:
 	6.1. Open a terminal and run this:
+   
 		6.1.1. cd <your_project_dir>
 		6.1.2. python save_session.py
+   
 	6.2. Copy the output string
 	6.3. Open Open the docker-compose.yml
 	6.4. Paste the output string to the environment variable 'TELEGRAM_API_STRING'
-7. Add the keywords you want into the file 'keywords.txt'
+8. Add the keywords you want into the file 'keywords.txt'
 	7.1 Add each keyword in each line of the file
-8. Configure Docker:
+9. Configure Docker:
 	8.1. Open terminal and the commands below
-		8.1.1. Build image: docker build -t telegram-watcher .
+   
+		8.1.1. Build image: docker build -t <image_name> .
 		8.1.2. Create and run container: docker compose up
