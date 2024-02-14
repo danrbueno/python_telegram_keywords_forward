@@ -1,6 +1,7 @@
 # python_telegram_keywords_forward
 Automatically forward messages in Telegram using Python and Telegram bots, using specific keywords.
-Technologies: Python, Telegram and Docker
+
+Technologies: Python, Telegram and Docker.
 
 This python project watches new messages in Telegram groups that a user is included, and then forward the messages to a specific group based on a list of keywords.
 1. Get all the Telegram groups/channels where's my user is added
